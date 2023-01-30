@@ -2,6 +2,5 @@ CREATE DATABASE likeme;
 
 CREATE TABLE posts (id SERIAL, titulo VARCHAR(25), img VARCHAR(1000), likes INT);
 
---3 ruta GET app.get consulta = "SELET * FROM posts"
-
---4 RUTA POST app.post +
+--agregando el campo que faltó
+ALTER TABLE posts ADD COLUMN descripcion VARCHAR(255);
